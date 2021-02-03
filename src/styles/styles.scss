@@ -1,0 +1,113 @@
+@import "table.scss";
+@import "modalWindow.scss";
+@import "inputs.scss";
+*{
+  outline: none;
+}
+body{
+    display: flex;
+    justify-content: center;
+    padding: 3em;
+    color: rgb(41, 41, 41);
+    overflow-y: hidden;
+}
+main {
+    max-width: 80em;
+    display: grid;
+    grid-template-rows: 1fr 8fr;
+}
+section {
+  display: grid;
+  grid-template-columns: 5fr 3fr 2fr;
+}
+span.participants-title { 
+    position: relative;
+    display: flex;
+    height: 3em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    line-height: 3;
+    background: #5c6664;
+    border-radius: .25em;
+    overflow-y: hidden;
+    border: none;
+    color: white;
+}
+div.btn {
+  -webkit-user-select: none;
+  background: #5c6664;
+  font-size: 1em;
+  width: 5em;
+  height: 3em;
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+  border-radius: .25em;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+div.error {
+  position: relative;
+  line-height: 3em;
+  width: 100%;
+  background-color: rgba(255, 0, 0, 0.6);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  opacity: 0;
+}
+.showError {
+  animation-name: visibleError;
+  -webkit-animation-name: visibleError;
+  animation-duration: 10s;
+  -webkit-animation-duration: 10s;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+}
+
+@keyframes visibleError {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes visibleError {
+  0% {
+    -webkit-opacity: 0;
+  }
+  5% {
+    -webkit-opacity: 1;
+  }
+  95% {
+    -webkit-opacity: 1;
+  }
+  100% {
+    -webkit-opacity: 0;
+  }
+}
+.buttons {
+  margin-top: 3em;
+  display: flex;
+  justify-content: space-between;
+  .btn {
+    width: 12em;
+    transition: ease-in, 0.5s;
+  }
+  .btn_cancel:hover, #delete-cancel:hover{
+    color: white;
+    background-color: rgb(180, 57, 57);
+  }
+  .btn_create:hover, #delete-confirm:hover{
+    color: white;
+    background-color: rgb(47, 160, 98);
+  }
+}

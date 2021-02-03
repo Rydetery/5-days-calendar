@@ -1,0 +1,65 @@
+div.popup, div.delete-popup {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+div.popup .modal, div.popup .delete-modal, div.delete-popup .modal, div.delete-popup .delete-modal {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.popup .modal .modal_container, div.popup .delete-modal .modal_container, div.delete-popup .modal .modal_container, div.delete-popup .delete-modal .modal_container {
+  background-color: white;
+  border-radius: 0.3em;
+  overflow: hidden;
+}
+
+.delete-container {
+  background-color: white;
+  padding: 2em;
+  border-radius: 0.3em;
+}
+
+.delete-container .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.delete-container .buttons button {
+  width: 10em;
+}
+
+form {
+  padding: 2em;
+}
+
+form .form-item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 4fr;
+      grid-template-columns: 1fr 4fr;
+  grid-gap: 3em;
+  margin: 2em 1em;
+}
+
+form .form-item label {
+  -webkit-user-select: none;
+  margin-top: 1em;
+}
+/*# sourceMappingURL=modalWindow.css.map */
