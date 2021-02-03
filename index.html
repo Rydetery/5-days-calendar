@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./logo.png" type="image/x-icon">
+    <link href="./css/styles.css" rel="stylesheet">
+    <title>Calendar</title>
+</head>
+<body>
+    <main>
+        <section>
+        <h1>Calendar</h1>
+        <div class="select">
+         <select class="members">
+            <option selected disabled>Choose participants</option></select>
+        </div>
+            <button id="newEvent">New Event +</button>
+    </section>
+        <table></table>
+        <div class="popup">
+            <div class="modal">
+                <div class="modal_container">
+                    <div class="error"><span>You can`t use this time slot!</span>
+                        <div id='deleteError' class="deleteButton"></div>
+                    </div>
+                    <form>
+                        <div class="form-item">
+                            <label>Name of the Event:</label>
+                            <input class="nameEvent" id="newName" type="text" placeholder="Event Name"/>
+                        </div>
+                        <div class="form-item">
+                            <label>Participants:</label>
+                                    <div class='container'>
+                                        <div class='title'><span class="participants-title">Choose participants</span>
+                                          <div class='participants-list'>
+                                          </div>
+                                        </div>
+                                    </div>
+                        </div>
+                        <div class="form-item">
+                            <label>Day:</label>
+                            <div class="select">
+                                <select name="day" id="day">
+                                   <option selected disabled>Choose event day</option>
+                                   <option value=1>Monday</option>
+                                   <option value=2>Tuesday</option>
+                                   <option value=3>Wednesday</option>
+                                   <option value=4>Thursday</option>
+                                   <option value=5>Friday</option>
+                                </select>
+                             </div>
+                        </div>
+                        <div class="form-item">
+                            <label>Time:</label>
+                            <div class="select">
+                                <select name="time" id="time">
+                                    <option selected disabled>Choose event time</option>
+                                    <option value="10">10:00</option>
+                                    <option value="11">11:00</option>
+                                    <option value="12">12:00</option>
+                                    <option value="13">13:00</option>
+                                    <option value="14">14:00</option>
+                                    <option value="15">15:00</option>
+                                    <option value="16">16:00</option>
+                                    <option value="17">17:00</option>
+                                    <option value="18">18:00</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <div class="btn btn_cancel">
+                                <span>Cancel</span>
+                            </div>
+                            <div class="btn btn_create">
+                                <span>Create</span>
+                            </div>
+                        </div>
+                      </form>
+                </div>
+            </div>
+        </div>
+        <div class="delete-popup">
+            <div class="delete-modal">
+                <div class="delete-container">
+                    <h2>Are you sure you want to delete "<span id="event-name"></span>" event?</h2>
+                    <div class="buttons">
+                        <button id="delete-cancel">No</button>
+                        <button id="delete-confirm">Yes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./js/calendar.js"></script>
+</body>
+</html>
