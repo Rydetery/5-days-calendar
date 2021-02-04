@@ -1,6 +1,6 @@
 # __Calendar for the meeting room__
 ![GitHub repo size](https://img.shields.io/github/repo-size/Rydetery/5-days-calendar?color=green&logo=GitHub&logoColor=green&style=flat-square)  ![GitHub all releases](https://img.shields.io/github/downloads/Rydetery/5-days-calendar/total?logo=GitHub&logoColor=red&style=flat-square)
-#### [![N|Solid](https://i.ibb.co/XsvhKFr/imgonline-com-ua-Resize-Km5w9t-Vzk-R.png)](https://rydetery.github.io/5-days-calendar) Simple meeting planning calendar for a meeting room for 5 working days from 10:00 to 18:00.
+#### [![N|Solid](https://i.ibb.co/XsvhKFr/imgonline-com-ua-Resize-Km5w9t-Vzk-R.png)](https://rydetery.github.io/5-days-calendar) Simple meeting planning calendar for a 5 working days from 10:00 to 18:00.
 ***
 ### Opportunities 
 *    creation of events with a given day and time;
